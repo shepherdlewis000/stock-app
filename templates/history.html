@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    {{ table|safe }}
+
+    <!-- From staff solution for interactive tables view-source:https://survey.cs50.net/sheet -->
+ <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $('table')['DataTable']({'info':![],'ordering':!![],'paging':![],'searching':![]});
+    </script>
+
+{% endblock %}

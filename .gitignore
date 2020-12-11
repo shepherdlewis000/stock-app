@@ -1,0 +1,6 @@
+.env
+__pycache__/
+.pylintrc
+__pycache__.old/
+
+
